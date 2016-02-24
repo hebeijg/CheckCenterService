@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99A6F44C-2C5B-4BB0-A5DD-3FF7D1440EA0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CheckCenterService.Web</RootNamespace>
+    <AssemblyName>CheckCenterService.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bottom.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\ac_02.jpg" />
+    <Content Include="Images\al_1.gif" />
+    <Content Include="Images\bl_1.gif" />
+    <Content Include="Images\bottom_line.gif" />
+    <Content Include="Images\button.gif" />
+    <Content Include="Images\button_down.gif" />
+    <Content Include="Images\button_hover.gif" />
+    <Content Include="Images\down.jpg" />
+    <Content Include="Images\left01.gif" />
+    <Content Include="Images\left01.jpg" />
+    <Content Include="Images\left02.gif" />
+    <Content Include="Images\left02.jpg" />
+    <Content Include="Images\left03.gif" />
+    <Content Include="Images\left03.jpg" />
+    <Content Include="Images\left04.jpg" />
+    <Content Include="Images\leftlist.gif" />
+    <Content Include="Images\left_bg.jpg" />
+    <Content Include="Images\left_line.gif" />
+    <Content Include="Images\left_line01.gif" />
+    <Content Include="Images\Login.png" />
+    <Content Include="Images\LoginBg.jpg" />
+    <Content Include="Images\LoginDown.png" />
+    <Content Include="Images\LoginHover.png" />
+    <Content Include="Images\LoginSubBg.gif" />
+    <Content Include="Images\Logout.png" />
+    <Content Include="Images\right_bg.jpg" />
+    <Content Include="Images\right_sec.jpg" />
+    <Content Include="Images\right_unsec.jpg" />
+    <Content Include="Images\right_unsec01.jpg" />
+    <Content Include="Images\right_unsec02.jpg" />
+    <Content Include="Images\top01.jpg" />
+    <Content Include="Images\top02.jpg" />
+    <Content Include="Images\top03.jpg" />
+    <Content Include="Images\Turn.png" />
+    <Content Include="Images\up.jpg" />
+    <Content Include="Images\三角.png" />
+    <Content Include="Images\上传.png" />
+    <Content Include="Images\上传点击.png" />
+    <Content Include="Images\上传附件.png" />
+    <Content Include="Images\上传附件点击.png" />
+    <Content Include="Images\专人外送.png" />
+    <Content Include="Images\保存.png" />
+    <Content Include="Images\保存点击.png" />
+    <Content Include="Images\修改.png" />
+    <Content Include="Images\修改点击.png" />
+    <Content Include="Images\借阅.png" />
+    <Content Include="Images\借阅点击.png" />
+    <Content Include="Images\内页页面_01.gif" />
+    <Content Include="Images\内页页面_02.gif" />
+    <Content Include="Images\内页页面_03.gif" />
+    <Content Include="Images\内页页面_04.gif" />
+    <Content Include="Images\内页页面_05.gif" />
+    <Content Include="Images\内页页面_06.gif" />
+    <Content Include="Images\内页页面_08.gif" />
+    <Content Include="Images\内页页面_09.gif" />
+    <Content Include="Images\内页页面_10.gif" />
+    <Content Include="Images\内页页面_10（反）.gif" />
+    <Content Include="Images\内页页面_11.gif" />
+    <Content Include="Images\内页页面_12.gif" />
+    <Content Include="Images\分隔符.gif" />
+    <Content Include="Images\删除.png" />
+    <Content Include="Images\删除、点击.png" />
+    <Content Include="Images\取消.png" />
+    <Content Include="Images\取消点击.png" />
+    <Content Include="Images\同意.png" />
+    <Content Include="Images\同意点击.png" />
+    <Content Include="Images\回收.png" />
+    <Content Include="Images\回收点击.png" />
+    <Content Include="Images\复印件制作.png" />
+    <Content Include="Images\复印件制作2.png" />
+    <Content Include="Images\外送.png" />
+    <Content Include="Images\外送点击.png" />
+    <Content Include="Images\审计.png" />
+    <Content Include="Images\审计点击.png" />
+    <Content Include="Images\导出Excel.png" />
+    <Content Include="Images\导出Excel点击.png" />
+    <Content Include="Images\延期留存.png" />
+    <Content Include="Images\归档.png" />
+    <Content Include="Images\归档点击.png" />
+    <Content Include="Images\拒绝.png" />
+    <Content Include="Images\拒绝点击.png" />
+    <Content Include="Images\接收.png" />
+    <Content Include="Images\接收点击.png" />
+    <Content Include="Images\提交.png" />
+    <Content Include="Images\提交点击.png" />
+    <Content Include="Images\查询.png" />
+    <Content Include="Images\查询点击.png" />
+    <Content Include="Images\正常.png" />
+    <Content Include="Images\添加.png" />
+    <Content Include="Images\添加点击.png" />
+    <Content Include="Images\点击.png" />
+    <Content Include="Images\点击专人外送.png" />
+    <Content Include="Images\点击跨部门移交.png" />
+    <Content Include="Images\登陆界面bg.jpg" />
+    <Content Include="Images\确认.png" />
+    <Content Include="Images\确认点击.png" />
+    <Content Include="Images\移交.png" />
+    <Content Include="Images\移交点击.png" />
+    <Content Include="Images\箭头白.png" />
+    <Content Include="Images\箭头黑.png" />
+    <Content Include="Images\调回.png" />
+    <Content Include="Images\调回点击.png" />
+    <Content Include="Images\跨部门移交.png" />
+    <Content Include="Images\重置.png" />
+    <Content Include="Images\重置点击.png" />
+    <Content Include="Images\销毁.png" />
+    <Content Include="Images\销毁点击.png" />
+    <Content Include="Images\驳回.png" />
+    <Content Include="Images\驳回点击.png" />
+    <Content Include="Images\验证可用性.png" />
+    <Content Include="Images\验证可用性点击.png" />
+    <Content Include="LeftBarTemp.htm" />
+    <Content Include="LeftMenu.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
+    <Content Include="apiapp.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.aspx" />
+    <Content Include="ProjectManager\BusinessProjectList.aspx" />
+    <Content Include="ProjectManager\ManagementProjectList.aspx" />
+    <Content Include="ProjectManager\ProjectDetail.aspx" />
+    <Content Include="ProjectManager\ProjectEdit.aspx" />
+    <Content Include="ProjectManager\ProjectSetResponse.aspx" />
+    <Content Include="ProjectManager\ResponseProjectList.aspx" />
+    <Content Include="Scripts\base64.js" />
+    <Content Include="Scripts\bgiframe.js" />
+    <Content Include="Scripts\Calendar.js" />
+    <Content Include="Scripts\Common.js" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery.ztree.all-3.4.min.js" />
+    <Content Include="Scripts\jquery.ztree.core-3.5.js" />
+    <Content Include="Scripts\jquery.ztree.excheck-3.5.js" />
+    <Content Include="Scripts\jquery.ztree.exedit-3.5.min.js" />
+    <Content Include="Scripts\md5.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Styles\StyleSheetForReport.css" />
+    <Content Include="Styles\StyleSheetForReportView.css" />
+    <Content Include="Styles\zTreeStyle\demo.css" />
+    <Content Include="Styles\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\2.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\3.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\4.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\5.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\6.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\7.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\8.png" />
+    <Content Include="Styles\zTreeStyle\img\diy\9.png" />
+    <Content Include="Styles\zTreeStyle\img\line_conn.gif" />
+    <Content Include="Styles\zTreeStyle\img\loading.gif" />
+    <Content Include="Styles\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="Styles\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="Styles\zTreeStyle\zTreeStyle.css" />
+    <Content Include="SystemManager\DepartmentEdit.aspx" />
+    <Content Include="SystemManager\DepartmentList.aspx" />
+    <Content Include="SystemManager\DepartmentManager.aspx" />
+    <Content Include="SystemManager\RoleList.aspx" />
+    <Content Include="SystemManager\SearchUser.aspx" />
+    <Content Include="SystemManager\SetMenu.aspx" />
+    <Content Include="SystemManager\SetUser.aspx" />
+    <Content Include="SystemManager\UserList.aspx" />
+    <Content Include="SystemManager\UserEdit.aspx" />
+    <Content Include="SystemManager\UserManager.aspx" />
+    <Content Include="Top.aspx" />
+    <Content Include="topBar.htm" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bottom.aspx.cs">
+      <DependentUpon>Bottom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bottom.aspx.designer.cs">
+      <DependentUpon>Bottom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Commo\MessageBox.cs" />
+    <Compile Include="Commo\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftMenu.aspx.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftMenu.aspx.designer.cs">
+      <DependentUpon>LeftMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\BusinessProjectList.aspx.cs">
+      <DependentUpon>BusinessProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\BusinessProjectList.aspx.designer.cs">
+      <DependentUpon>BusinessProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\ManagementProjectList.aspx.cs">
+      <DependentUpon>ManagementProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\ManagementProjectList.aspx.designer.cs">
+      <DependentUpon>ManagementProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\ProjectDetail.aspx.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\ProjectDetail.aspx.designer.cs">
+      <DependentUpon>ProjectDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\ProjectEdit.aspx.cs">
+      <DependentUpon>ProjectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\ProjectEdit.aspx.designer.cs">
+      <DependentUpon>ProjectEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\ProjectSetResponse.aspx.cs">
+      <DependentUpon>ProjectSetResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\ProjectSetResponse.aspx.designer.cs">
+      <DependentUpon>ProjectSetResponse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManager\ResponseProjectList.aspx.cs">
+      <DependentUpon>ResponseProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManager\ResponseProjectList.aspx.designer.cs">
+      <DependentUpon>ResponseProjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManager\DepartmentEdit.aspx.cs">
+      <DependentUpon>DepartmentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\DepartmentEdit.aspx.designer.cs">
+      <DependentUpon>DepartmentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\DepartmentList.aspx.cs">
+      <DependentUpon>DepartmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\DepartmentList.aspx.designer.cs">
+      <DependentUpon>DepartmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\DepartmentManager.aspx.cs">
+      <DependentUpon>DepartmentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\DepartmentManager.aspx.designer.cs">
+      <DependentUpon>DepartmentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\SearchUser.aspx.cs">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\SearchUser.aspx.designer.cs">
+      <DependentUpon>SearchUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\SetMenu.aspx.cs">
+      <DependentUpon>SetMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\SetMenu.aspx.designer.cs">
+      <DependentUpon>SetMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\SetUser.aspx.cs">
+      <DependentUpon>SetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\SetUser.aspx.designer.cs">
+      <DependentUpon>SetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\UserManager.aspx.cs">
+      <DependentUpon>UserManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManager\UserManager.aspx.designer.cs">
+      <DependentUpon>UserManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CheckCenterService.BLL\CheckCenterService.BLL.csproj">
+      <Project>{d8e849f9-3f76-484a-ad69-c3af87c2868d}</Project>
+      <Name>CheckCenterService.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckCenterService.Common\CheckCenterService.Common.csproj">
+      <Project>{46ac40d3-11c2-488e-a1bc-a2f4b76a8522}</Project>
+      <Name>CheckCenterService.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckCenterService.Model\CheckCenterService.Model.csproj">
+      <Project>{6b8042de-22ae-4b55-b5bc-a387211f866c}</Project>
+      <Name>CheckCenterService.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TaskManager\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

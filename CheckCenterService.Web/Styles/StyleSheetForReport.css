@@ -1,0 +1,186 @@
+﻿body
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 100%;
+    font-size: 10pt;
+    PADDING-RIGHT: 0px; 
+    PADDING-LEFT: 0px;
+     PADDING-BOTTOM: 0px; 
+     MARGIN: 0px;
+      PADDING-TOP: 0px
+}
+table
+{
+   
+}
+.hidden
+{
+    display: none;
+}
+
+.GridViewStyle
+{
+  
+ 
+    left: 0px;
+    border-right: #d2d2d2 1px solid;
+    border-top: #d2d2d2 1px solid;
+    border-left: #d2d2d2 1px solid;
+    border-bottom: #d2d2d2 1px solid;
+    text-align: center;
+}
+.GridViewStyle td
+{
+    border-bottom: #d2d2d2 1px solid;
+    height: 20px;
+    vertical-align: middle;
+    font-size: 10pt;
+}
+.GridViewStyle th
+{
+    background-image: url(images/图表头部背景.jpg);
+    height: 24px;
+    color: Black;
+    font-size: 10pt;
+    font-weight: bold;
+    border-bottom: #d2d2d2 1px solid;
+    text-align: center;
+}
+.GridViewHeaderStyle
+{
+    background-image: url(images/图表头部背景.jpg);
+    height: 30px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.GridViewRowStyle
+{
+    background-color: #f5f5f5;
+}
+
+.GridViewAlternatingRowStyle
+{
+    background-color: #FFFFFF;
+}
+
+.GridViewPagerStyle
+{
+    margin: 0 auto 0 auto;
+}
+
+
+.header1
+{
+    color: #27787b;
+    height: 30px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E0F9F6;
+}
+
+.rows
+{
+    background-color: #ECF7FF;
+    height: 26px;
+    font-size: 10pt;
+}
+
+
+.btn
+{
+    border-right: #7b9ebd 1px solid;
+    padding-right: 2px;
+    border-top: #7b9ebd 1px solid;
+    padding-left: 2px;
+    font-size: 12px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+    border-left: #7b9ebd 1px solid;
+    cursor: hand;
+    color: black;
+    padding-top: 2px;
+    border-bottom: #7b9ebd 1px solid;
+}
+
+
+
+.txtbox
+{
+    height: 18px;
+    width: 160px;
+}
+
+.txtbox1
+{
+    height: 18px;
+    width: 120px;
+}
+
+.ddllist
+{
+    height: 26px;
+    width: 170px;
+}
+
+table
+{
+}
+
+#wrap
+{
+    background-color: #FFFFFF;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.div1
+{
+    background-color: #cecfde;
+    border: 1px solid #cecfde;
+}
+
+.ContentBackColor
+{
+    background-image: url('../images/内页页面_08.gif');
+    background-repeat: repeat-x;
+}
+
+.PanelBackColor
+{
+    background-color: #88b8b8;
+    border-width: 1;
+    overflow: scroll;
+  
+}
+.SplitLine
+{
+    background-color: #518b8c;
+    border-width: 1px;
+}
+
+a:link
+{
+    color: #0066cc;
+}
+a:visited
+{
+    color: #0066cc;
+}
+a:hover
+{
+    color: #0066cc;
+}
+a:active
+{
+    color: #0066cc;
+}
+
+.BtnClass
+{
+    width: 80px;
+    line-height: 25px;
+}

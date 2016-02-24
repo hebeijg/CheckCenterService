@@ -1,0 +1,8 @@
+D:\lianxi\C#\CheckCenterService\CheckCenterService.Model\bin\Debug\CheckCenterService.Model.dll
+D:\lianxi\C#\CheckCenterService\CheckCenterService.Model\bin\Debug\CheckCenterService.Model.pdb
+D:\lianxi\C#\CheckCenterService\CheckCenterService.Model\obj\Debug\CheckCenterService.Model.dll
+D:\lianxi\C#\CheckCenterService\CheckCenterService.Model\obj\Debug\CheckCenterService.Model.pdb
+D:\C#\CheckCenterService\CheckCenterService.Model\bin\Debug\CheckCenterService.Model.dll
+D:\C#\CheckCenterService\CheckCenterService.Model\bin\Debug\CheckCenterService.Model.pdb
+D:\C#\CheckCenterService\CheckCenterService.Model\obj\Debug\CheckCenterService.Model.dll
+D:\C#\CheckCenterService\CheckCenterService.Model\obj\Debug\CheckCenterService.Model.pdb
